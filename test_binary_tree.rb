@@ -13,5 +13,6 @@ class BinaryTreeTest < Minitest::Test
     bt.insert 1,2,3
 
     assert bt.include?(1)
+    refute bt.include?(21321)
   end
 end
