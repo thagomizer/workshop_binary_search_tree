@@ -35,4 +35,26 @@ class BinaryTreeTest < Minitest::Test
     bt.insert 6
     assert_equal 5, bt.height
   end
+
+  def test_it_can_has_diameter
+    bt = BinaryTree.new
+    bt.insert 8
+
+    assert_equal 1, bt.diameter
+
+    bt.insert 3
+    bt.insert 10
+
+    assert_equal 3, bt.diameter
+
+    bt.insert 1
+    bt.insert 6
+    bt.insert 7
+    bt.insert 4
+    bt.insert 14
+    bt.insert 13
+    bt.insert 42
+
+    assert_equal 9, bt.diameter
+  end
 end
