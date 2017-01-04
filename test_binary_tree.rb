@@ -30,9 +30,9 @@ class BinaryTreeTest < Minitest::Test
     bt.insert 4
     bt.insert 5
 
-    assert_equal 3, bt.height
+    assert_equal 4, bt.height
 
     bt.insert 6
-    assert_equal 4, bt.height
+    assert_equal 5, bt.height
   end
 end
