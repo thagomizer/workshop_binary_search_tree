@@ -7,4 +7,9 @@ class BinaryTreeTest < Minitest::Test
 
     assert bt
   end
+
+  def test_it_cans_has_inserts
+    bt = BinaryTree.new
+    bt.insert 1,2,3
+  end
 end
